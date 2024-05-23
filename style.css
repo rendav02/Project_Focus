@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(221, 0, 0);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+#main{
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 80px;
+    padding: 30PX;
+    border-radius: 30px;
+}
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#work-minutes, .semicolon, #work-seconds {
+    text-align: center;
+    font-size: 8rem;
+    margin: 0;
+}
+
+.timer-label {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.sound{
+    padding: 20px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px;
+}
+.timer-button {
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+#taskList {
+    margin-top: 20px;
+    text-align: left;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#new-task-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-task-input {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+         .semicolon {
+    display: inline;
+}
+
+#new-task-submit {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit, .delete {
+    background: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    background-color: #28a745;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.edit:hover, .delete:hover {
+    color: #007BFF;
+}
+
