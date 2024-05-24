@@ -12,51 +12,53 @@
             <ul>
                 <li class="logo"><a class="active" href="#home"><img src="resources/logo_focusFlow.png" alt="logo"></a></li>
             </ul>
-            <div id="main">
-                <div id="soundBoard">
-                    <button class="sound" onclick="changeBackground('resources/CityView.gif', 'resources/City_noises.mp3')"><img src="resources/cityICon.png" alt="City"></button>
-                <button class="sound" onclick="changeBackground('resources/beach.gif', 'resources/wave_noises.mp3')"><img src="resources/beachIcon.png" alt="Beach"></button>
-                <button class="sound" onclick="changeBackground('resources/RainingBackground.gif', 'resources/rain_noises.mp3')"><img src="resources/rainIcon.png" alt="Rain"></button>
-                <button class="sound" onclick="changeBackground('resources/cafe.gif', 'resources/cafe_noises.mp3')"><img src="resources/coffeeIcon.png" alt="Cafe"></button>
-                    
-                </div>
-
-                <div id="timer-container">
-                    <div id="work-label" class="timer-label">Work:</div>
-                    <button id="pormodoro-button" class="timer-button" onclick="pormodoro()">Pomodoro</button>
-                    <button id="short-button" class="timer-button" onclick="shortbreak()">Short break</button>
-                    <button id="long-button" class="timer-button" onclick="longbreak()">Long break</button>
-                    <div id="work-timer" class="timer">
-                        <p id="work-minutes">25</p>
-                        <p class="semicolon">:</p>
-                        <p id="work-seconds">00</p>
+            <section>
+                <div id="main">
+                    <div id="soundBoard">
+                        <button class="sound" onclick="changeBackground('resources/CityView.gif', 'resources/City_noises.mp3')"><img src="resources/cityICon.png" alt="City"></button>
+                    <button class="sound" onclick="changeBackground('resources/beach.gif', 'resources/wave_noises.mp3')"><img src="resources/beachIcon.png" alt="Beach"></button>
+                    <button class="sound" onclick="changeBackground('resources/RainingBackground.gif', 'resources/rain_noises.mp3')"><img src="resources/rainIcon.png" alt="Rain"></button>
+                    <button class="sound" onclick="changeBackground('resources/cafe.gif', 'resources/cafe_noises.mp3')"><img src="resources/coffeeIcon.png" alt="Cafe"></button>
+                        
                     </div>
-                    <button id="start-button" class="timer-button" onclick="toggleTimer()">▶ Start</button>
-                    <button id="stop-button" class="timer-button" style="display: none;" onclick="toggleTimer()">❚❚ Pause</button>
-                    <button id="skip-button" class="timer-button" onclick="skipTimer()">Skip</button>
+    
+                    <div id="timer-container">
+                        <div id="work-label" class="timer-label">Work:</div>
+                        <button id="pormodoro-button" class="timer-button" onclick="pormodoro()">Pomodoro</button>
+                        <button id="short-button" class="timer-button" onclick="shortbreak()">Short break</button>
+                        <button id="long-button" class="timer-button" onclick="longbreak()">Long break</button>
+                        <div id="work-timer" class="timer">
+                            <p id="work-minutes">25</p>
+                            <p class="semicolon">:</p>
+                            <p id="work-seconds">00</p>
+                        </div>
+                        <button id="start-button" class="timer-button" onclick="toggleTimer()">▶ Start</button>
+                        <button id="stop-button" class="timer-button" style="display: none;" onclick="toggleTimer()">❚❚ Pause</button>
+                        <button id="skip-button" class="timer-button" onclick="skipTimer()">Skip</button>
+                    </div>
                 </div>
-            </div>
-            <div id="taskList">
-                <header>
-                    <form id="new-task-form">
-                        <input 
-                            type="text" 
-                            name="new-task-input" 
-                            id="new-task-input" 
-                            placeholder="What do you have planned?" />
-                        <input 
-                            type="submit"
-                            id="new-task-submit" 
-                            value="Add task" />
-                    </form>
-                </header>
-                <main>
-                    <section class="task-list">
-                        <h2>Tasks</h2>
-                        <div id="tasks"></div>
-                    </section>
-                </main>
-            </div>
+                <div id="taskList">
+                    <header>
+                        <form id="new-task-form">
+                            <input 
+                                type="text" 
+                                name="new-task-input" 
+                                id="new-task-input" 
+                                placeholder="What do you have planned?" />
+                            <input 
+                                type="submit"
+                                id="new-task-submit" 
+                                value="Add task" />
+                        </form>
+                    </header>
+                    <main>
+                        <section class="task-list">
+                            <h2>Tasks</h2>
+                            <div id="tasks"></div>
+                        </section>
+                    </main>
+                </div>
+            </section>
             <script src="script.js"></script>           
         </body>
         </html>
